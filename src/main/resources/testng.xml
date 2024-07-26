@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="ViewBookDetailsTest">
+        <parameter name="bookUrl" value="https://legendabookstore.com/home/product/9789778350623/"/>
+        <classes>
+            <class name="test.scenarios.ViewBookDetailsTest"/>
+        </classes>
+    </test>
+    <test name="AddBookToCartTest">
+        <parameter name="bookUrl" value="https://legendabookstore.com/home/product/9789778350623/"/>
+        <parameter name="addToCartButtonCssSelector" value=".bd-productbuy-5"/>
+        <classes>
+            <class name="test.scenarios.AddBookToCartTest"/>
+        </classes>
+    </test>
+</suite>
