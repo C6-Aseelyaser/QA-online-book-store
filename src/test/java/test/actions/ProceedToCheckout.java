@@ -65,7 +65,7 @@ public class ProceedToCheckout {
         phone.sendKeys("+962123456789");
 
         WebElement email = driver.findElement(By.id("billing_email"));
-        email.sendKeys("john.doe@exacxxxmple.com");
+        email.sendKeys("john.doe@exmple2.com");
 
         Reporter.log("Filled in billing details.", true);
     }

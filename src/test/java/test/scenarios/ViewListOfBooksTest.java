@@ -1,13 +1,11 @@
 package test.scenarios;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import test.actions.ViewListOfBooks;
-
-import java.time.Duration;
+import test.utils.WebDriverManager;
 
 public class ViewListOfBooksTest {
 
@@ -15,10 +13,7 @@ public class ViewListOfBooksTest {
 
     @BeforeClass
     public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        driver.get("https://legendabookstore.com/");
+        driver = WebDriverManager.getDriver();
     }
 
     @Test
@@ -28,8 +23,6 @@ public class ViewListOfBooksTest {
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        WebDriverManager.quitDriver();
     }
 }
