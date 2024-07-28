@@ -18,6 +18,8 @@ The tests target the following website:[Legenda Bookstore](https://legendabookst
 - [Setup and Installation](#setup-and-installation)
 - [Running the Tests](#running-the-tests)
 - [Dependencies](#dependencies)
+- [Demo](#demo)
+
 
 ## Technology Stack
 1. Programming language - **`Java`** 
@@ -139,3 +141,14 @@ All dependencies are specified in the `pom.xml` file and will be downloaded auto
         <version>5.9.2</version>
     </dependency>
 </dependencies>
+```
+## Demo
+
+Watch the demo below to see how the automated tests work:
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dSwbmEWFmG0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+```
+
+
+
+
