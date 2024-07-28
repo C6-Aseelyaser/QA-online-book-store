@@ -145,7 +145,7 @@ All dependencies are specified in the `pom.xml` file and will be downloaded auto
 ## Demo
 
 Watch the demo below to see how the automated tests work:
-[![Watch the video](https://img.youtube.com/vi/dSwbmEWFmG0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dSwbmEWFmG0)
+[![Watch the video](https://img.youtube.com/vi/dSwbmEWFmG0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dSwbmEWFmG0&autoplay=1)
 
 
 
