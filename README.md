@@ -145,10 +145,7 @@ All dependencies are specified in the `pom.xml` file and will be downloaded auto
 ## Demo
 
 Watch the demo below to see how the automated tests work:
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dSwbmEWFmG0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-```
-
+[![Watch the video](https://img.youtube.com/vi/dSwbmEWFmG0/maxresdefault.jpg)](https://www.youtube.com/watch?v=dSwbmEWFmG0)
 
 
 
