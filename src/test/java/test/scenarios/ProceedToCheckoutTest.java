@@ -8,7 +8,7 @@ import test.actions.AddBookToCart;
 import test.actions.ProceedToCheckout;
 import test.actions.ViewCart;
 import test.actions.ViewListOfBooks;
-import test.utils.WebDriverManager;
+import test.utils.TheWebDriverManager;
 
 public class ProceedToCheckoutTest {
 
@@ -18,7 +18,7 @@ public class ProceedToCheckoutTest {
 
     @BeforeClass
     public void setUp() {
-        driver = WebDriverManager.getDriver();
+        driver = TheWebDriverManager.getDriver();
 
         viewCart = new ViewCart(driver);
         proceedToCheckout = new ProceedToCheckout(driver);
@@ -38,6 +38,6 @@ public class ProceedToCheckoutTest {
 
     @AfterClass
     public void tearDown() {
-        WebDriverManager.quitDriver();
+        TheWebDriverManager.quitDriver();
     }
 }

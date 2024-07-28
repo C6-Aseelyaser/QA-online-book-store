@@ -5,7 +5,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import test.actions.ViewListOfBooks;
-import test.utils.WebDriverManager;
+import test.utils.TheWebDriverManager;
 
 public class ViewListOfBooksTest {
 
@@ -13,7 +13,7 @@ public class ViewListOfBooksTest {
 
     @BeforeClass
     public void setUp() {
-        driver = WebDriverManager.getDriver();
+        driver = TheWebDriverManager.getDriver();
     }
 
     @Test
@@ -23,6 +23,6 @@ public class ViewListOfBooksTest {
 
     @AfterClass
     public void tearDown() {
-        WebDriverManager.quitDriver();
+        TheWebDriverManager.quitDriver();
     }
 }

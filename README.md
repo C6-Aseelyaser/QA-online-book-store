@@ -49,7 +49,7 @@ QA-online-book-store
 │ │ ├── ViewCart.java
 │ │ └── ProceedToCheckout.java
 │ ├── utils
-│ │ └── WebDriverManager
+│ └── └── WebDriverManager
 └── pom.xml
 ```
 
@@ -83,7 +83,7 @@ To set up and run the tests, follow these steps:
 
 5. **Set up WebDriverManager** (if used):
     ```java
-    WebDriverManager.chromedriver().driverVersion("123.0.6312.86").setup();
+    WebDriverManager.chromedriver().setup();
     ```
 
 ## Running the Tests
@@ -111,6 +111,7 @@ The project has the following dependencies:
 
 - **Selenium WebDriver**: For browser automation.
 - **TestNG**: For organizing the test cases and running the tests.
+- **WebDriverManager**: For managing browser drivers automatically.
 
 All dependencies are specified in the `pom.xml` file and will be downloaded automatically by Maven.
 
@@ -129,5 +130,12 @@ All dependencies are specified in the `pom.xml` file and will be downloaded auto
         <artifactId>testng</artifactId>
         <version>7.9.0</version>
         <scope>test</scope>
+    </dependency>
+    
+    <!-- WebDriverManager Dependency -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.9.2</version>
     </dependency>
 </dependencies>

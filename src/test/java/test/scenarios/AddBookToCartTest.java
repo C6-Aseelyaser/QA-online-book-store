@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.actions.AddBookToCart;
 import test.actions.ViewListOfBooks;
-import test.utils.WebDriverManager;
+import test.utils.TheWebDriverManager;
 
 public class AddBookToCartTest {
 
@@ -15,7 +15,7 @@ public class AddBookToCartTest {
 
     @BeforeClass
     public void setUp() {
-        driver = WebDriverManager.getDriver();
+        driver = TheWebDriverManager.getDriver();
         ViewListOfBooks.scrollToBooks(driver);
     }
 
@@ -33,6 +33,6 @@ public class AddBookToCartTest {
 
     @AfterClass
     public void tearDown() {
-        WebDriverManager.quitDriver();
+        TheWebDriverManager.quitDriver();
     }
 }
