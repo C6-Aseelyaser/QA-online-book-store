@@ -1,5 +1,5 @@
 # QA Online Book Store
-![img_8.png](img_8.png)
+![img_1.png](img_1.png)
 
 This repository contains an automated test suite for a sample online bookstore application. The tests are written using Selenium WebDriver and TestNG in Java. The suite covers the following functionalities of the bookstore:
 - Viewing a list of books.
@@ -12,16 +12,26 @@ The tests target the following website:[Legenda Bookstore](https://legendabookst
 
 ## Table of Contents
 
+- [Technology Stack](#Technology-Stack)
 - [Project Structure](#project-structure)
 - [Test Scenarios](#test-scenarios)
 - [Setup and Installation](#setup-and-installation)
 - [Running the Tests](#running-the-tests)
 - [Dependencies](#dependencies)
 
+## Technology Stack
+1. Programming language - **`Java`** 
+2. Build and project management tool - **`Maven`** 
+3. Testing framework - **`TestNG`**
+4. Automation framework - **`Selenium WebDriver`** 
+
+
 ## Project Structure
 
 ```bash
 QA-online-book-store
+├── drivers
+│ └── chromedrivers.exe
 ├── src
 │ └── test
 │ └── java
@@ -32,12 +42,14 @@ QA-online-book-store
 │ │ ├── AddBookToCartTest.java
 │ │ ├── ViewCartTest.java
 │ │ └── ProceedToCheckoutTest.java
-│ └── actions
-│ ├── ViewListOfBooks.java
-│ ├── ViewBookDetails.java
-│ ├── AddBookToCart.java
-│ ├── ViewCart.java
-│ └── ProceedToCheckout.java
+│ ├── actions
+│ │ ├── ViewListOfBooks.java
+│ │ ├── ViewBookDetails.java
+│ │ ├── AddBookToCart.java
+│ │ ├── ViewCart.java
+│ │ └── ProceedToCheckout.java
+│ ├── utils
+│ │ └── WebDriverManager
 └── pom.xml
 ```
 
@@ -46,22 +58,17 @@ QA-online-book-store
 The test suite includes the following scenarios:
 
 1. **View List of Books**: Verify that the list of books is displayed correctly.
-   ![img_9.png](img_9.png)
 2. **View Book Details**: Verify that book details can be viewed correctly.
-   ![img_10.png](img_10.png)
 3. **Add Book to Cart**: Verify that a user can add a book to the cart.
-   ![img_14.png](img_14.png)
 4. **View and Update Cart**: Verify that the cart updates correctly when a book is added.
-   ![img_11.png](img_11.png)
 5. **Proceed to Checkout**: Verify that the user can proceed to checkout from the cart.
-   ![img_15.png](img_15.png)
 ## Setup and Installation
 
 To set up and run the tests, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Aseelyaser/QA-online-book-store.git
+    git clone https://github.com/C6-Aseelyaser/QA-online-book-store.git
     cd QA-online-book-store
     ```
 
